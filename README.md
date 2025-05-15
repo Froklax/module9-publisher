@@ -12,3 +12,6 @@ Ketika program publisher dan subscriber menggunakan URL “amqp://guest:guest@lo
 
 ### Gambar menjalankan RabbitMQ
 ![Gambar RabbitMQ](./RabbitMqPic.png)
+
+### Setelah program publisher dijalankan, program subscriber berhasil menerima pesan yang dikirim. Dalam gambar ini, publisher telah dijalankan sebanyak dua kali, sehingga subscriber menerima total 10 event.
+![Gambar Console](./ConsolePic.png)
