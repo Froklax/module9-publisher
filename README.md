@@ -15,3 +15,6 @@ Ketika program publisher dan subscriber menggunakan URL “amqp://guest:guest@lo
 
 ### Setelah program publisher dijalankan, program subscriber berhasil menerima pesan yang dikirim. Dalam gambar ini, publisher telah dijalankan sebanyak dua kali, sehingga subscriber menerima total 10 event.
 ![Gambar Console](./ConsolePic.png)
+
+### Grafik di RabbitMQ menunjukkan beberapa spike yang muncul sejalan dengan waktu ketika saya menjalankan program publisher beberapa kali di terminal. Setiap spike merupakan response langsung dari sistem terhadap aktivitas publish event oleh publisher, menunjukkan bahwa setiap kali program dijalankan, jumlah event yang dikirim meningkat, menyebabkan spike dalam grafik. Pola ini berbanding lurus dengan frekuensi eksekusi publisher dan memberikan informasi bagaimana pesan dikirim dan diproses oleh RabbitMQ.
+![Gambar Spike](./RabbitMQSpikePic.png)
